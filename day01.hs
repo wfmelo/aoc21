@@ -16,5 +16,5 @@ part2 xs = part1 . map (\(x, y, z) -> x + y + z) $ zip3 xs (tail xs) (tail (tail
 main :: IO ()
 main = do
   input <- map read . lines <$> readFile "day01.txt"
-  printf "Part 1: %d\n" $  part1 input
-  printf "Part 2: %d\n" $  part2 input
+  printf "Part 1: %d\n" $ part1 input
+  printf "Part 2: %d\n" $ part2 input
